@@ -1,0 +1,34 @@
+#top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  background-color: #dcc9f4;   
+}
+
+.top-child {
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  background-color: #ffd9df;
+}
+
+#middle {
+  width: 800px;
+  height: 800px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ffd9df;
+}
+
+#middle-child01 {
+  width: 200px;
+  height: 200px;
+  color: #87ceeb
+}
