@@ -1,0 +1,26 @@
+Last login: Fri Feb 16 16:08:19 on ttys000
+makiayaka@sugitatakukinoMacBook ~ % ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	git_tutorial
+makiayaka@sugitatakukinoMacBook ~ % cd Desktop
+makiayaka@sugitatakukinoMacBook Desktop % cd kadai_022
+makiayaka@sugitatakukinoMacBook kadai_022 % ls
+0213		0213.pub	images		kadai_022.html	style.css
+makiayaka@sugitatakukinoMacBook kadai_022 % git add kadai_022.html
+makiayaka@sugitatakukinoMacBook kadai_022 % git remote add origin main
+makiayaka@sugitatakukinoMacBook kadai_022 % git remote add origin git@github.com:SA901105/kadai-question.git
+error: remote origin already exists.
+makiayaka@sugitatakukinoMacBook kadai_022 % git remote -v
+
+origin	main (fetch)
+origin	main (push)
+makiayaka@sugitatakukinoMacBook kadai_022 % git push -u origin main
+
+fatal: 'main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+makiayaka@sugitatakukinoMacBook kadai_022 % git remote add origin https://github.com/SA901105/kadai-question.git
+error: remote origin already exists.
+makiayaka@sugitatakukinoMacBook kadai_022 % 
