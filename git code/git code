@@ -1,26 +1,56 @@
-Last login: Fri Feb 16 16:08:19 on ttys000
+Last login: Fri Feb 16 18:57:13 on console
 makiayaka@sugitatakukinoMacBook ~ % ls
 Applications	Documents	Library		Music		Public
 Desktop		Downloads	Movies		Pictures	git_tutorial
 makiayaka@sugitatakukinoMacBook ~ % cd Desktop
-makiayaka@sugitatakukinoMacBook Desktop % cd kadai_022
-makiayaka@sugitatakukinoMacBook kadai_022 % ls
-0213		0213.pub	images		kadai_022.html	style.css
-makiayaka@sugitatakukinoMacBook kadai_022 % git add kadai_022.html
-makiayaka@sugitatakukinoMacBook kadai_022 % git remote add origin main
-makiayaka@sugitatakukinoMacBook kadai_022 % git remote add origin git@github.com:SA901105/kadai-question.git
+makiayaka@sugitatakukinoMacBook Desktop % cd kadhi_022
+makiayaka@sugitatakukinoMacBook kadhi_022 % ls
+images		kadai_022.html	style.css
+makiayaka@sugitatakukinoMacBook kadhi_022 % git init
+Reinitialized existing Git repository in /Users/makiayaka/Desktop/kadhi_022/.git/
+makiayaka@sugitatakukinoMacBook kadhi_022 % git add kadai_022.html
+makiayaka@sugitatakukinoMacBook kadhi_022 % git commit -m "media screen部分下に 記載"
+[main ec5df22] media screen部分下に記載
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+makiayaka@sugitatakukinoMacBook kadhi_022 % ssh-keygen -t rsa -C makiayaka@gmail.com
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/makiayaka/.ssh/id_rsa): 
+/Users/makiayaka/.ssh/id_rsa already exists.
+Overwrite (y/n)? yes
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/makiayaka/.ssh/id_rsa
+Your public key has been saved in /Users/makiayaka/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:m5/11nYSaHTsTa0tgOTYFlHotKeUZI6hlsbTtEjb4iY makiayaka@gmail.com
+The key's randomart image is:
++---[RSA 3072]----+
+|          .+.    |
+|      . o B      |
+|     o O # = .  .|
+|      @ * @ + o o|
+|     + oSo + = = |
+|    E o  o. o = o|
+|     o  o  ..  + |
+|         . o .o +|
+|          o  ..o.|
++----[SHA256]-----+
+makiayaka@sugitatakukinoMacBook kadhi_022 % ssh -T git@github.com              
+git@github.com: Permission denied (publickey).
+makiayaka@sugitatakukinoMacBook kadhi_022 % cat /Users/makiayaka/.ssh/id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDv6mzOcjZfhiRl4XeDoYlYfRGIBHrQJckZgubpdZUOSdQtsJ0CAYFZWkNmJVfjbxLPblJ73zuAeV3qnRaoluDq0Iqaqb1fkYLeHwGxbqP+lTo8QD8OIhTZRxFv1Xty6Hhmncqcj9TbVcUfG9E/8vzti8tOJWlDPm8iEBL6qoM2VL74++Zs2YbOf6Mr8DVdj3ch19GiBs8CIWBwjyl3v//16NI5SKZKIdinRTvdFpMLhEsmCns+5WGKhEBDASmMWtrXLsxI5Z6V0/r/oFLkaxqOqtOYhv5mM6BUS6Y7bzNJajw8dp+lE0/oV4U0akax0dW57/YDchEwmhVSTJYf9jmNXTjmCJoNtTpIvTfNw7qwmzZbSm3vnINfisx3FxUtu8tVcwreQwTPGTdmFpwXpO26G7mg3Us/OnWTJUo1UMFvuOvVx2Y1hja16zbVYhKJrnWGPeFE9UaChDNhtsobLgvv5Y8Y28PZzZ7nhMqwNsVzvRhcvevJ+qj9byhEc4RryGs= makiayaka@gmail.com
+makiayaka@sugitatakukinoMacBook kadhi_022 % ssh -T git@github.com
+Enter passphrase for key '/Users/makiayaka/.ssh/id_rsa': 
+Hi SA901105! You've successfully authenticated, but GitHub does not provide shell access.
+makiayaka@sugitatakukinoMacBook kadhi_022 % git remote add origin git@github.com:SA901105/kadai-question.git
 error: remote origin already exists.
-makiayaka@sugitatakukinoMacBook kadai_022 % git remote -v
-
+makiayaka@sugitatakukinoMacBook kadhi_022 % git remote -v
 origin	main (fetch)
 origin	main (push)
-makiayaka@sugitatakukinoMacBook kadai_022 % git push -u origin main
-
+makiayaka@sugitatakukinoMacBook kadhi_022 % git push -u origin main
 fatal: 'main' does not appear to be a git repository
 fatal: Could not read from remote repository.
 
 Please make sure you have the correct access rights
 and the repository exists.
-makiayaka@sugitatakukinoMacBook kadai_022 % git remote add origin https://github.com/SA901105/kadai-question.git
-error: remote origin already exists.
-makiayaka@sugitatakukinoMacBook kadai_022 % 
+makiayaka@sugitatakukinoMacBook kadhi_022 % 
