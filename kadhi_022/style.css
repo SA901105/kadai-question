@@ -1,5 +1,5 @@
 body {
-  margin: 0 0 0 0;
+  margin: 0;
   text-align: center;
 }
 
@@ -8,15 +8,13 @@ main {
 }
 
 #parent {
-  align-items: center;
   justify-content: space-around;
 }
 
 .contents {
-  border: solid 3px rgb(238, 204, 204);
-  flex-basis: 25%;
   padding: 10px 15px 10px 15px;
   margin: 20px 0 20px 0;
+  border: solid 3px rgb(238, 204, 204);
 }
 
 p:nth-child(3)::first-letter {
@@ -50,7 +48,7 @@ h2::before {
 }
 
 p {
-  margin: 0 0 0 0;
+  margin: 0;
   font-size: 20px;
 }
 
@@ -92,6 +90,10 @@ footer > a:hover {
 
   #parent {
     display: flex;
+  }
+
+  .contents {
+    flex-basis: 25%;
   }
 
 }
